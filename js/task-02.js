@@ -19,6 +19,6 @@ return component
 });
 listEl.append(...componentsEl);
 
-console.log (listEl);
+// console.log (listEl);
 
 
