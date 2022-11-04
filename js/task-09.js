@@ -11,13 +11,13 @@ const refs = {
 
 // Я вирішив зробити і зміну кольору самої кнопки
 
-const onChangeBodyColor = (event) => {
+const onButtonChangeColorClick = (event) => {
   refs.body.style.backgroundColor = getRandomHexColor();
   refs.colorValue.textContent = getRandomHexColor();
   event.currentTarget.style.backgroundColor = getRandomHexColor();
   
   }
-  refs.buttonChangeColor.addEventListener('click', onChangeBodyColor);
+  refs.buttonChangeColor.addEventListener('click', onButtonChangeColorClick);
   
 
 

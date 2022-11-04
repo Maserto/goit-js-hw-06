@@ -3,9 +3,9 @@ const refs = {
     outputTextEl : document.querySelector('#text'),
 }
 
-refs.rangeInput.addEventListener('input', changeOutputTextFontSize) 
+refs.rangeInput.addEventListener('input', onInputChange) 
 
- function changeOutputTextFontSize(event) {
+ function onInputChange(event) {
    refs.outputTextEl.style.fontSize = event.currentTarget.value+'px';
 
 

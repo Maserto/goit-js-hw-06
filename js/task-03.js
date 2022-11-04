@@ -21,7 +21,7 @@ const galleryEl = document.querySelector(".gallery")
 
 
 const galleryItemEl = images
-.map(element => `<li class = image style="list-style-type: none; padding:  10px;"> <img
+.map( element => `<li class = image style="list-style-type: none; padding:  10px;"> <img
 src="${element.url}" alt="${element.alt}"
 width = 220px style ="border-radius: 8px;"
 >
