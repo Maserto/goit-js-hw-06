@@ -27,18 +27,20 @@
  
     const inputEl = document.querySelector('#validation-input')
 const numberOfCharacters = Number(inputEl.dataset.length);
-    inputEl.addEventListener('blur', onLengthCheck)
-    inputEl.addEventListener('focus', returnInitialClass)
+    inputEl.addEventListener('blur', onInputBlur)
 
-    function onLengthCheck(e){
+
+    function onInputBlur(e){
         
-
-         e.currentTarget.value.length === numberOfCharacters ? 
-         inputEl.classList.add('valid') :
-         inputEl.classList.add('invalid')
-    }
-    function returnInitialClass (e) {
-        inputEl.classList.remove('invalid')
+if (e.currentTarget.value.length === numberOfCharacters){
+    inputEl.classList.remove('invalid');
+    inputEl.classList.add('valid');
+}
+else
+{
+    inputEl.classList.remove('valid');
+    inputEl.classList.add('invalid');
+}
     }
 
     
