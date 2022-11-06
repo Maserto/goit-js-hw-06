@@ -16,7 +16,11 @@ function submitForm (event){
         mail, password,
     };
 
-    
-   const isInputValueCorrect = mail === "" || password === "" ? alert("Доброго вечора, ми з України. Залужний каже, що всі поля мають бути заповнені") : console.log(formData);
-   form.reset();
+    if ( mail === "" || password === "" ){
+        alert("Всі поля мають бути заповнені") 
+    } else {
+        console.log(formData); 
+        form.reset();
+    }
+
 }
